@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<style>
+.color2{
+  width: 100%;
+  height: 450px;
+  background-image: url("https://i.imgur.com/dxwmuBv.png"); 
+  background-repeat: no-repeat;
+  background-size: cover;
+
+		 }
+
+nav ul li a{
+  color: black;
+}
+
+li:hover {
+          background-color:#a6a6a6;
+        }
+nav{
+    position: fixed;
+    top: 0px;
+    z-index: 2;
+    opacity: .5;
+    }
+
+nav:hover{
+  opacity: 1.0;
+   }
+  
+.slider{
+    z-index: 1;
+}
+
+</style>
+<body>
+	<div class="fixed-action-btn horizontal">
+    <a class="btn-floating btn-large #424242 grey darken-3" onclick="topFunction()" id="myBtn" title="Go to top">
+      <i class="large material-icons">keyboard_arrow_up</i>
+    </a>	
+ 	</div>
+
+<nav>
+  <div class="nav-wrapper white">
+    <a href="#!" class="brand-logo center"><img src="https://imgur.com/iKxzzhz.png" class="responsive" style="height: 50px; margin-top: 5px;"></a>
+     <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons black-text text-darken-4">menu</i></a>
+    <ul class="left hide-on-med-and-down">
+      <li><a href="#home" title="Go back home">HOME</a></li>
+      <li><a href="#band" title="About the band">ABOUT UV</a></li>
+      <li><a href="#tickets" title="Book tickets">CLOTHS RECOMMENDATION</a></li>
+      <li><a class="dropdown-button" href="#!">CALCULATOR</a></li>
+    </ul>
+   </div>
+</nav>
+
+
+      <ul class="side-nav" id="mobile-demo">
+        <img src="https://imgur.com/iKxzzhz.png" style="height: 120px; margin-top: 5px; margin-left: 20px;">
+        <li><a href="#">HOME</a></li>
+        <li class="divider"></li>
+        <li><a href="#band">ABOUT UV</a></li>
+        <li class="divider"></li>
+        <li><a href="#tickets">CLOTHS RECOMMENDATION</a></li>
+        <li class="divider"></li>
+        <li><a href="#contact">CALCULATOR</a></li>
+       </ul>
+
+        <ul id="dropdown1" class="dropdown-content">
+          <li><a class="black-text" href="#tour">Amazon</a></li>
+          <li class="divider"></li>
+          <li><a class="black-text" href="#tour">Store</a></li>
+        </ul>
+
+    <div class="slider" id="home">
+    <ul class="slides">
+      <li>
+      	<img src="https://imgur.com/o59BZtp.jpg"> 
+        <div class="caption right-align black-text">
+          <h3>Avoid UV damage</h3>
+     			<h6><b>Check out our "About UV" page</b></h6>
+     	</div>    
+        </li>
+      <li>
+        <img src="https://imgur.com/NE6PiNk.jpg"> 
+        <div class="caption right-align black-text">
+           <h3>Cover up</h3>
+      		<h6>Apply sun protect and cover up <br> when you leave your home.</h6>
+         </div>
+      </li>
+      <li>
+        <img src="https://imgur.com/TuvvySY.jpg"> 
+        <div class="caption right-align white-text">
+          <h3>Always Apply Sun Screen</h3>
+      <h6><b>Even if its not sunny ouside<br> you need to apply sun screen!</h6></p> 
+        </div>
+       </li>
+  </ul>
+  </div>
+     
+<div class="row" id="band">
+  <div class="col s12 m12">
+     <div class="color2 black-text center-align">
+        <h2 style="padding:50px; font-family:Bradley Hand ITC">Sun Safe Kids</h2>
+      <p style="font-size: 22px"><i>Always protect yourself from UV</i></p>
+      <div class="container">
+      <p style="font-size: 20px">Welcome to Sun Safe Kids, your caring partner who cares about your children’s skin health! We're committed to providing parents with comprehensive children's sun protection advice so your little one can play in the sun while maintaining healthy skin.</p>
+      
+	  </div>
+     </div>
+   </div>
+ </div> 
+
+ 	  <div class="UV index orange lighten-2" id="tickets">
+    <div class="container" style="max-width:800px">
+    	<br>
+      <h2 class="center white-text" style="padding: 20px; font-family:Copperplate Gothic Light;">UV index</h2>
+      <p class="center white-text"><i>Check your UV index in your city!</i></p><br>
+
+      <div class="row" id="tour">
+    <div class="row slider-img" style="padding: 20px;">
+    <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <img src="https://i.imgur.com/hvtuh6N.jpg">
+              </div>
+            <div class="card-content">
+              <p><b>Melbourne</b></p>
+            <p style="opacity: 0.7;">Get the latest UV index</p>
+            <br>
+            <a class="waves-effect waves-light btn orange lighten-1 white-text">View UV</a>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <img src="https://i.imgur.com/CHGvoDf.jpg">
+              </div>
+            <div class="card-content">
+              <p><b>Sydney</b></p>
+            <p style="opacity:0.7;">Get the latest UV index</p>
+            <br>
+            <a class="waves-effect waves-light btn orange lighten-1 white-text">View UV</a>
+            </div>
+          </div>
+        </div>
+
+          <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <img src="https://i.imgur.com/gFftcbO.jpg">
+              </div>
+            <div class="card-content">
+              <p><b>Adelaide</b></p>
+            <p style="opacity: 0.7;">Get the latest UV index</p>
+            <br>
+            <a class="waves-effect waves-light btn orange lighten-1 white-text">View UV</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+</div>
+
+  </div>
+<br>
+</div>
+
+<div class="download">
+  <div class="vertical-center">
+    <h2 class="center">Keep in check</h2>
+    <p class="center" style="opacity: 0.7;"><i>Forgot to apply sunscreen? download our checklist!</i></p>
+    <a href="Sun_Safe_Kids_Sunscreen_Application_Checklist_Landscape_Orange_Final_Rights.pdf" target="_blank" class="center waves-effect waves-light btn orange lighten-2 white-text" style="margin-left: 45%"><i class="material-icons right">cloud_download</i>View UV</a>
+    <br>
+    <br>
+    </div>
+  </div>
+
+
+
+<footer class="page-footer grey darken-1">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12 m4"> 
+                <h5 class="white-text">Sun Safe kids.co</h5>
+                <p class="white-text "><br>Contact Us <br> 1800-434-2345<br>1800-281-5658</p>
+              </div>
+              <div class="col l4 offset-l2 s12 m4">
+                <h5 class="white-text">Social-Media</h5>
+                 <a class="white-text" href="#">Twitter</a><br>
+                  <a class="white-text" href="#">Facbook</a>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright col s12 m4 #424242 grey darken-3">
+            <div class="container white-text ">
+            ©2018 Copyright Text
+            </div>
+          </div>
+        </footer>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+<script type="text/javascript">
+	$( document ).ready(function(){
+		$(".button-collapse").sideNav();
+	});
+</script>
+<script>
+	$(".dropdown-button").dropdown();
+</script>
+<script>
+         $(document).ready(function(){
+      $('.slider').slider(
+        {indicators:false,height:700}
+        );
+      });
+     </script>
+ 	<script type="text/javascript">
+ 		 $(document).ready(function(){
+    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+    $('.modal').modal();
+  });
+          
+ 	</script>
+</body>
+</html>
